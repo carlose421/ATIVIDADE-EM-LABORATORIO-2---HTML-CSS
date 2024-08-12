@@ -1,0 +1,53 @@
+.services-listing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 50px 150px; /* Defina a quantidade de espaço entre as colunas e as linhas */
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura do container para ocupar a altura total da tela */
+    font-style: italic;
+}
+
+.service {
+    background-color: #e3fae9;
+    padding: .5rem;
+    text-align: center;
+}
+
+.service:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center; /* Centraliza horizontalmente */
+}
+
+.service:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.service:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center; /* Centraliza horizontalmente */
+}
+
+.service:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.service:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: center; /* Centraliza horizontalmente */
+}
+
+.service:nth-child(6) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.service p {
+    margin: 0;
+}
